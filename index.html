@@ -38,20 +38,20 @@
                     <img id = "picture" src="img/prakash.jpg" class="img-fluid img-thumbnail img-responsive"/>
             </div>
             <div class="col-md-9">
-                <p> 
-	                I'm a junior studying Computer Engineering at the 
+                <p>
+	                I'm a junior studying Computer Engineering at the
 	                <a href="https://www.umich.edu/" target="_blank">University of Michigan.</a>
 	                I'm interested in Digital Signal Processing with a focus in audio, and
-	                it's applications in the recording studio and music, as well as the healthcare technology space and the impact of engineering progress on improving patient care, as well as life outside of the doctor's office. 
+	                it's applications in the recording studio and music, as well as the healthcare technology space and the impact of engineering progress on improving patient care, as well as life outside of the doctor's office.
                 </p>
 
                 <p>
-                    I'm a pianist and vocalist, and recently picked up the guitar as well, and love to write and sing music of all kinds! I'm also the music director of <a href="http://www.maizemirchiofficial.com">Maize Mirchi A cappella</a>, and write/arrange a lot of their music.
+                    I'm a pianist and vocalist, and recently picked up the guitar as well, and love to write and sing music of all kinds! I'm also the music director of <a href="http://www.maizemirchiofficial.com" target="_blank">Maize Mirchi A cappella</a>, and write/arrange a lot of their music.
                 </p>
 
                 <p>
-                    contact me: 
-                   <a href="mailto:prakashk@umich.edu" target="_blank">email</a> 
+                    contact me:
+                   <a href="mailto:prakashk@umich.edu" target="_blank">email</a>
                    <a href="https://www.linkedin.com/in/prakash-kumar-390b48127/" target="_blank"> linkedin</a>
                    <a href="https://www.github.com/pkash16" target="_blank"> github</a>
                 </p>
@@ -86,8 +86,8 @@
             <b>HealthPals</b> <br />
             <em>Software Engineering Intern</em>
             <p>
-                HealthPals is a healthcare technology company founded by <a href="https://www.linkedin.com/in/rajesh-dash-8535179/" target="_blank">Dr. Rajesh Dash</a> and <a href="https://www.linkedin.com/in/sushantshankar/" target="_blank">Sushant Shankar</a>, working to combine medical science and data science to give doctors medical guideline driven treatments to their patients to reduce medical errors, with a primary focus in the cardiovascular health space. 
-            </p> 
+                HealthPals is a healthcare technology company founded by <a href="https://www.linkedin.com/in/rajesh-dash-8535179/" target="_blank">Dr. Rajesh Dash</a> and <a href="https://www.linkedin.com/in/sushantshankar/" target="_blank">Sushant Shankar</a>, working to combine medical science and data science to give doctors medical guideline driven treatments to their patients to reduce medical errors, with a primary focus in the cardiovascular health space.
+            </p>
             <p>
                 During my internship, I served as a liaison between the frontend and backend engineering teams in the development of the CLINT product(developed in python and react.js), designed to give value based decisions to clinicians at the point of care. I analyzed several thousand anonymous patient records while providing useful insights on patients' risk for cardiovascular disease by writing a Population Dashboard using javascript, python/pandas, and seaborn. <a href="https://www.healthpalsinc.com" target="_blank">learn more</a>
             </p>
@@ -98,6 +98,55 @@
         <h4 id="projects">Projects</h4>
         <br />
 
+	<div class = "row">
+		    <div class="col-2">
+			<img src="img/projects/eecs442.png" target="_blank" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
+		    </div>
+		    <div class="col-9">
+		    <b id ="mdp">EECS 442: Computer Vision, Structure from Motion</b> <br />
+		    <em> Student, Algorithms Engineer </em>
+		    <p>
+			Through EECS 442 (Computer Vision), I had to work on a final project with a partner that was self-guided. I decided to work on a project that tried to do structure from motion, a process that creates 3D visualizations from 2D images. An abstract of the document is below.
+		    </p>
+		    <p>
+			We pose two methods to construct a 3D point cloud of an object given a set of images of said object at various angles around it. This concept is called structure from motion, and we would like to implement a basic version of it for small objects in a confined space. We will do this by generating a 3D cloud from the relationship between the camera’s intrinsic parameters and the world’s extrinsic
+			parameters. The first method involves creating disparity maps between stereo images to make dense clouds and the second method involves using epipolar lines and feature extraction to create sparse, more accurate 3D clouds. Our full document is shown <a href="files/final_report_eecs442.pdf" target="_blank">here.</a>
+		    </p>
+		    </div>
+	</div>
+
+
+
+      <div class = "row">
+            <div class="col-2">
+                <img src="img/projects/harmonizer.png" target="_blank" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
+            </div>
+            <div class="col-9">
+            <b id ="mdp">EECS 351 Vocal Harmonizer</b> <br />
+            <em> Student, Algorithms Engineer </em>
+            <p>
+	    In the EECS 351 Digital Signal Processing Class, we had a final term project where we got a chance to use the signal processing techniques learned in class on a project we designed and tested. For this project, I tried to extend previous work on the MAX MSP <a href="#space_knobs">Vocal Harmonizer</a> from the Michigan Project Music Makeathon.
+
+	    Rather than using MAX MSP, we used MATLAB and were able to develop our own pitch shifting algorithm using the work from other papers such as Jean LaRoche's <a href ="http://www.ee.columbia.edu/~dpwe/papers/LaroD99-pvoc.pdf" target="_blank_">New Phase-Vocoder Techniques for Pitch Shifting, Harmonizing and Other Exotic Effects</a>. Using this, we attempt to create a real-time solution that can take input melodies and MIDI notes to create harmonies! We outline our initial work on our website <a href ="https://sites.google.com/umich.edu/eecs351vocalharmonizer/home" target="_blank">here</a>, yet more work is currently being done to port this project into a Virtual Studio Technology (VST) so that it can be used in professional audio workstations by anyone just by dragging and dropping a file.
+            </p>
+            </div>
+        </div>
+
+
+       <div class = "row">
+            <div class="col-2">
+                <img src="img/projects/buddybot.jpg" target="_blank" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
+            </div>
+            <div class="col-9">
+            <b id ="mdp">EECS 373 Embedded Systems: Buddy Bot</b> <br />
+            <em> Student, Hardware Engineer </em>
+            <p>
+	    Buddy bot is a following robot designed to help carry objects around the house for you. It was designed in the EECS 373 Embedded Systems Class, where I got a chance to work on an Embedded systems project with a team. While just a prototype built in 3 weeks, we wanted to try and design something that could actually be useful in a scenario where someone eldery  may need more assistance in a home, without having to carry potentially heavy objects. Buddy bot follows an IR-emitting anklet strapped around one's ankle. We used the Smartfusion SoC with an onboard FGPA and a ARM Cortex-M3 processor. Our team designed, built and tested the device, writing hardware components in Verilog and interfacing with the hardware in C. For more information, check out our <a href="http://eecs-373-buddy-bot.github.io">webpage.</a>
+            </p>
+            </div>
+        </div>
+
+
         <div class = "row">
             <div class="col-2">
                 <img src="img/projects/maestro.jpg" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
@@ -106,7 +155,7 @@
             <b id ="mdp">Multidisciplinary Design Program, MAESTRO</b> <br />
             <em>Algorithms Subteam</em>
             <p>
-                The goal of Maestro 2018 is to build a virtual conducting system for the University of Michigan’s School of Music, Theatre, and Dance to assist new conductors in practicing their art. Traditionally, new conductors attend active classes where an instructor watches them conduct and provides feedback. To practice outside the classroom, they either practice silently in front of a mirror or must recruit the help of musicians. With Maestro, conductors practice with a computer-simulated ensemble, thereby eliminating the need for live musicians as well as the stress that comes with performing in front of them. New conducting students would use this system in tandem with a traditional classroom experience. 
+                The goal of Maestro 2018 is to build a virtual conducting system for the University of Michigan’s School of Music, Theatre, and Dance to assist new conductors in practicing their art. Traditionally, new conductors attend active classes where an instructor watches them conduct and provides feedback. To practice outside the classroom, they either practice silently in front of a mirror or must recruit the help of musicians. With Maestro, conductors practice with a computer-simulated ensemble, thereby eliminating the need for live musicians as well as the stress that comes with performing in front of them. New conducting students would use this system in tandem with a traditional classroom experience.
             </p>
             <p>
                 Most of my work involved data collection of various music conductors gestures at various dynamic levels(loudness), articulation(style of sound), and tempos(beats per minute). Using this data of almost 14 conductors, I helped design signal processing algorithms to interpret those gestures using an Inertial Measurement Unit that measures rotation, acceleration, and gyroscope data.
@@ -123,7 +172,7 @@
                 <img src="img/projects/space_knobs.JPG" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
             </div>
             <div class="col-9">
-            <b>Michigan Project Music Makeathon</b> <br />
+            <b id="space_knobs">Michigan Project Music Makeathon</b> <br />
             <em>Space Knobs Vocal Harmonizer</em>
             <p>
                 I got a chance to participate in <a href="https://www.facebook.com/michiganprojectmusic/" target="_blank">Michigan Project Music's</a> inaugural music makeathon, where groups got a chance to build an exprimental "instrument" in 18 hours. It was a really cool experience where I learned a lot about Max/MSP and some cool signal processing concepts and apply them to music.
@@ -145,7 +194,7 @@
                 I took part as a pilot student testing a new program for graduate students. As a part of the course, I designed, built, and tested an autonomous line-following robot using a beaglebone, IMUs, a custom line-sensing PCB module.
             </p>
             <p>
-               Although I didn't get a chance to fully complete the project with my group in the timeline we had, I got a chance to fully design and test a PCB module using the DipTrace software and sending the designs into <a href="https://oshpark.com/">OshPark.</a> I also got a chance to learn about 3D modeling using <a href="https://www.solidworks.com/">SolidWorks</a> and how to use a laser cutter and 3D printer to build the components necessary for the robot. 
+               Although I didn't get a chance to fully complete the project with my group in the timeline we had, I got a chance to fully design and test a PCB module using the DipTrace software and sending the designs into <a href="https://oshpark.com/">OshPark.</a> I also got a chance to learn about 3D modeling using <a href="https://www.solidworks.com/">SolidWorks</a> and how to use a laser cutter and 3D printer to build the components necessary for the robot.
             </p>
             </div>
         </div>
@@ -159,7 +208,7 @@
             <b>MAX/MSP Ableton PAT 201 Course Project</b> <br />
             <em>Polyphonic Frequency Modulation Synthesizer</em>
             <p>
-                    Wrote a Frequency Modulation Synth that modulates a sine wave input with an ADSR(attack decay sustain release) with a modulator that also has an ADSR along with a "brightness" and "ratio" knob in Max MSP. I used this to do a live performance in my PAT 201(Performing arts technology) class, and used the output of the synth as a vocoder input as I sang live into the microphone. I've linked the maxpat <a href = "files/fmsynth.zip">here.</a> You can find a recording of the project <a href="files/fmsynth_wav.aif">here.</a>           </p>
+                    Wrote a Frequency Modulation Synth that modulates a sine wave input with an ADSR(attack decay sustain release) with a modulator that also has an ADSR along with a "brightness" and "ratio" knob in Max MSP. I used this to do a live performance in my PAT 201(Performing arts technology) class, and used the output of the synth as a vocoder input as I sang live into the microphone. I've linked the maxpat <a href = "files/fmsynthesis.amxd">here.</a></p>
             </div>
         </div>
 
@@ -185,7 +234,7 @@
             <b>3D Printing Assorted Projects, ENTR 390</b> <br />
             <em>Class Project</em>
             <p>
-                I got a chance to take a 3D printing class through the Entrepreneurship department at the University of Michigan. I took the class <a href=""https://cfe.umich.edu/entr-390-005-intro-to-entrepreneurial-design/">ENTR 390.006: Intro to Entrepreneurial Design.</a> Through the class, I got a chance to learn about 3D modeling in Fusion360, converting those files into stl files and then utlimately into gcode to print 3D models using <a href="https://www.makerbot.com/">MakerBots</a> using <a href="https://www.matterhackers.com/store/3d-printer-filament/pla">PLA material.</a> I also learned about <a href ="https://en.wikipedia.org/wiki/Photogrammetry">photogrammetry,</a> the process of converting a series of rotated images into a 3D model algorithmically. You can see a picture of a 3D model of my shoe using this method to the left. Throughout the class, I experimented with printing static models such as a turtle as well as dynamic "moving parts" using gears, including a basic door hinge. You can print those models <a href ="files/door_latch.zip">here.</a> 
+                I got a chance to take a 3D printing class through the Entrepreneurship department at the University of Michigan. I took the class <a href=""https://cfe.umich.edu/entr-390-005-intro-to-entrepreneurial-design/">ENTR 390.006: Intro to Entrepreneurial Design.</a> Through the class, I got a chance to learn about 3D modeling in Fusion360, converting those files into stl files and then utlimately into gcode to print 3D models using <a href="https://www.makerbot.com/">MakerBots</a> using <a href="https://www.matterhackers.com/store/3d-printer-filament/pla">PLA material.</a> I also learned about <a href ="https://en.wikipedia.org/wiki/Photogrammetry">photogrammetry,</a> the process of converting a series of rotated images into a 3D model algorithmically. You can see a picture of a 3D model of my shoe using this method to the left. Throughout the class, I experimented with printing static models such as a turtle as well as dynamic "moving parts" using gears, including a basic door hinge. You can print those models <a href ="files/door_latch.zip">here.</a>
             </p>
             </div>
         </div>
@@ -202,7 +251,7 @@
                 As a part of the Engineering 100 class at the University, me and a a group of fellow engineers were tasked with the creation of an underwater ROV that had a remote control system, a bluetooth camera module, and a hook to allow for interaction with its surroundings. After one semester of work we designed, built and tested the ROV in preparation for a competition at the end of the semester, where we pitted our ROV against other groups in a design challenge.
             </p>
             <p>
-                My contribution to the team was to use Arduinos and RF transmitters/receivers to build a remote control and bluetooth camera system allowed complete control and vision of the underwater ROV, and help build the final product using PVC. Through the class, I learned technical communication skills and how to write technical reports. A detailed technical report of this project can be found <a href="files/rov_report.pdf">here.</a>
+                My contribution to the team was to use Arduinos and RF transmitters/receivers to build a remote control and bluetooth camera system allowed complete control and vision of the underwater ROV, and help build the final product using PVC. Through the class, I learned technical communication skills and how to write technical reports. A detailed technical report of this project can be found <a href="files/rov_report.pdf" target="_blank">here.</a>
             </div>
         </div>
 
@@ -210,6 +259,21 @@
     <hr>
     <h4 id="music">Music</h4>
     <br />
+
+
+ <div class = "row">
+        <div class="col-2">
+            <img src="img/projects/mirchi.png" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
+        </div>
+        <div class="col-9">
+        <b>Unnamed Full Length Album </b> <br />
+        <em>Maize Mirchi A Cappella</em>
+        <p>
+            I am very proud to be a major part in the recording, tracking and arranging process of a full length album with <a href ="http://www.maizemirchiofficial.com" target="_blank">Maize Mirchi A Cappella! </a> The album is a culmination of our work from the past two years and features much of the music that I arranged for the group during my time as music director. It will feature eight of our best songs, and will be coming out later this year! For more info, check out our <a href="https://open.spotify.com/artist/69rLK6wV0XVWKnyir5J7zK?autoplay=true&v=A" target="_blank"> Spotify Page </a> with the recent release of two separate singles 'Zehnaseeb' and 'Piya o Re Piya'.</p>
+        </div>
+    </div>
+
+
 
     <div class = "row">
         <div class="col-2">
@@ -231,7 +295,7 @@
         </div>
         <div class="col-9">
         <b>Soundcloud</b> <br />
-        <em><a href="https://soundcloud.com/prakash-kumar-34">https://soundcloud.com/prakash-kumar-34</a></em>
+        <em><a href="https://soundcloud.com/prakash-kumar-34" target="_blank">https://soundcloud.com/prakash-kumar-34</a></em>
         <p>
             I've recently started putting some of my music/covers on soundcloud. My classwork from PAT 201/202 haven't been put up yet, but I plan to start putting all of my work on soundcloud and upcoming studio projects up there too!
         </p>
@@ -242,6 +306,25 @@
     <hr>
     <h4 id="coursework">Coursework</h4>
     <br />
+    <div class = "row">
+        <div class = "col-1"></div>
+        <div class="col-4">
+            Fall 2019
+            <ul>
+                <li>EECS 551: Matrix Methods for Signal Processing and Machine Learning</li>
+                <li>EECS 452: Digital Signal Processing Design Lab</li>
+                <li>EECS 498: Accelerated Systems for AI and health
+                <li>TC/ENGR 456: Upper level Technical Communications</li>
+            </ul>
+        </div>
+        <div class="col-4">
+            Winter 2020
+            <ul>
+                <li>Unsure</li>
+            </ul>
+        </div>
+    </div>
+
 
     <div class = "row">
         <div class = "col-1"></div>
@@ -257,11 +340,11 @@
             </ul>
         </div>
         <div class="col-4">
-            Winter 2019 (tentative plans)
-            <ul> 
+            Winter 2019
+            <ul>
                 <li>EECS 351: Digital Signal Processing</li>
                 <li>EECS 373: Embedded Systems</li>
-                <li>ME 424: 424 Engineering Acoustics</li>
+                <li>EECS 442: Computer Vision</li>
                 <li>2cr. Mentorship for MDP minor</li>
             </ul>
         </div>
@@ -282,8 +365,8 @@
         <div class="col-4">
             Winter 2018
             <ul>
-                <li>EECS 215: Signals and Systems</li>
-                <li>EECS 370: Probability for Electrical Engineers</li>
+                <li>EECS 215: Circuits</li>
+                <li>EECS 370: Computer Architecture</li>
                 <li>EECS 498: Joint class for <a href = "#mdp">Multidisciplinary Design Program</a></li>
                 <li>PAT 201: Introduction to Computer Music</li>
             </ul>
@@ -317,12 +400,6 @@
     <hr>
     <h4 id="organizations">Organizations</h4>
     <ul>
-      <li>
-        <a href = "https://umich.campuslabs.com/engage/organization/dfa" target="_blank">Design For America</a>
-        <br />
-        As a computer engineering major, I spend a lot of time thinking about how computers work, and how to make them better. Using this knowledge I like to think about how I can use computing to help enhance healthcare, music, audio and more. Although I'm passionate about computing and its capability, I rarely work in a space that has a direct impact on social challenges in a way DFA enables me to. It's because of the tight social connections and the drive of all of DFAers around the world to think about these challenges in new ways that makes me really excited about my future with DFA and the work that can be done using the design process.
-      </li>
-
       <li> <a href = "http://www.maizemirchiofficial" target="_blank">Maize Mirchi A Cappella</a></li>
       <li> <a href = "http://aes.studentorgs.umich.edu/" target="_blank">Audio Engineering Society</a></li>
     <li> <a href = "http://aes.studentorgs.umich.edu/" target="_blank">Michigan Project Music</a></li>
