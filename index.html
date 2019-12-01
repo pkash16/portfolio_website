@@ -39,10 +39,10 @@
             </div>
             <div class="col-md-9">
                 <p>
-	                I'm a junior studying Computer Engineering at the
+	                I'm a senior studying Computer Engineering at the
 	                <a href="https://www.umich.edu/" target="_blank">University of Michigan.</a>
 	                I'm interested in Digital Signal Processing with a focus in audio, and
-	                it's applications in the recording studio and music, as well as the healthcare technology space and the impact of engineering progress on improving patient care, as well as life outside of the doctor's office.
+	                it's applications in music and audio, as well as the healthcare technology space and the impact of engineering progress on improving patient care, as well as life outside of the doctor's office.
                 </p>
 
                 <p>
@@ -60,6 +60,20 @@
         <hr>
         <h4 id="prof_experience">Professional Experience</h4>
         <br />
+        <div class = "row">
+            <div class="col-2">
+                <img src="img/projects/ti.jpg" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
+            </div>
+            <div class="col-9">
+            <b>Texas Instruments</b> <br />
+            <em>Test engineer, Front Panel Display-Link</em>
+            <p>
+            	I worked in the <a href="http://www.ti.com/interface/fpd-link-serdes/overview.html" target="_blank" >FPD-Link</a> team in Texas Instruments' Santa Clara office as a Test Engineering Intern. FPD-Link is a product line consisting of seralizers and deserializers to transmit high-speed data. I built software tools and scripts to help reduce time spent on the test floor, reducing costs. I also built a cost report for using a Xilinx FPGA board and external hardware to implement the MIPI Alliance D-PHY communication protocol, commonly used in displays and cameras.
+	    </p>
+            </div>
+        </div>
+
+
         <div class = "row">
             <div class="col-2">
                 <img src="img/projects/michigan_medicine.jpg" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
@@ -116,18 +130,17 @@
 	</div>
 
 
-
       <div class = "row">
             <div class="col-2">
                 <img src="img/projects/harmonizer.png" target="_blank" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
             </div>
             <div class="col-9">
-            <b id ="mdp">EECS 351 Vocal Harmonizer</b> <br />
+            <b id ="351">EECS 351 Vocal Harmonizer</b> <br />
             <em> Student, Algorithms Engineer </em>
             <p>
 	    In the EECS 351 Digital Signal Processing Class, we had a final term project where we got a chance to use the signal processing techniques learned in class on a project we designed and tested. For this project, I tried to extend previous work on the MAX MSP <a href="#space_knobs">Vocal Harmonizer</a> from the Michigan Project Music Makeathon.
 
-	    Rather than using MAX MSP, we used MATLAB and were able to develop our own pitch shifting algorithm using the work from other papers such as Jean LaRoche's <a href ="http://www.ee.columbia.edu/~dpwe/papers/LaroD99-pvoc.pdf" target="_blank_">New Phase-Vocoder Techniques for Pitch Shifting, Harmonizing and Other Exotic Effects</a>. Using this, we attempt to create a real-time solution that can take input melodies and MIDI notes to create harmonies! We outline our initial work on our website <a href ="https://sites.google.com/umich.edu/eecs351vocalharmonizer/home" target="_blank">here</a>, yet more work is currently being done to port this project into a Virtual Studio Technology (VST) so that it can be used in professional audio workstations by anyone just by dragging and dropping a file.
+	    Rather than using MAX MSP, we used MATLAB and were able to develop our own pitch shifting algorithm using the work from other papers such as Jean LaRoche's <a href ="http://www.ee.columbia.edu/~dpwe/papers/LaroD99-pvoc.pdf" target="_blank_">New Phase-Vocoder Techniques for Pitch Shifting, Harmonizing and Other Exotic Effects</a>. Using this, we attempt to create a real-time solution that can take input melodies and MIDI notes to create harmonies! We outline our initial work on our website <a href ="https://sites.google.com/umich.edu/eecs351vocalharmonizer/home" target="_blank">here</a>, yet more work is currently being done to port this project into a Virtual Studio Technology (VST) so that it can be used in professional audio workstations by anyone just by dragging and dropping a file. <a href ="https://sites.google.com/umich.edu/eecs351vocalharmonizer/home" target="_blank">learn more</a>
             </p>
             </div>
         </div>
@@ -139,6 +152,7 @@
             </div>
             <div class="col-9">
             <b id ="mdp">EECS 373 Embedded Systems: Buddy Bot</b> <br />
+
             <em> Student, Hardware Engineer </em>
             <p>
 	    Buddy bot is a following robot designed to help carry objects around the house for you. It was designed in the EECS 373 Embedded Systems Class, where I got a chance to work on an Embedded systems project with a team. While just a prototype built in 3 weeks, we wanted to try and design something that could actually be useful in a scenario where someone eldery  may need more assistance in a home, without having to carry potentially heavy objects. Buddy bot follows an IR-emitting anklet strapped around one's ankle. We used the Smartfusion SoC with an onboard FGPA and a ARM Cortex-M3 processor. Our team designed, built and tested the device, writing hardware components in Verilog and interfacing with the hardware in C. For more information, check out our <a href="http://eecs-373-buddy-bot.github.io">webpage.</a>
@@ -153,13 +167,14 @@
             </div>
             <div class="col-9">
             <b id ="mdp">Multidisciplinary Design Program, MAESTRO</b> <br />
-            <em>Algorithms Subteam</em>
+	    <em>Algorithms Subteam</em> <br />
+	    <a href ="https://drive.google.com/file/d/1hm7D41Vq7NfOOpq0IAiq-WUIisJLPsQL/view?usp=sharing"> VIDEO from Design Expo </a>
             <p>
                 The goal of Maestro 2018 is to build a virtual conducting system for the University of Michigan’s School of Music, Theatre, and Dance to assist new conductors in practicing their art. Traditionally, new conductors attend active classes where an instructor watches them conduct and provides feedback. To practice outside the classroom, they either practice silently in front of a mirror or must recruit the help of musicians. With Maestro, conductors practice with a computer-simulated ensemble, thereby eliminating the need for live musicians as well as the stress that comes with performing in front of them. New conducting students would use this system in tandem with a traditional classroom experience.
             </p>
             <p>
                 Most of my work involved data collection of various music conductors gestures at various dynamic levels(loudness), articulation(style of sound), and tempos(beats per minute). Using this data of almost 14 conductors, I helped design signal processing algorithms to interpret those gestures using an Inertial Measurement Unit that measures rotation, acceleration, and gyroscope data.
-                My work involved using Matlab and Python/Pandas to write data analysis and apply transforms on sampled data. Later on, I worked on integrating the system to the Apple ecosystem, converting the algorithms into real-time using <a href="https://developer.apple.com/swift/" target="_blank">swift </a>to be processed using an Apple iPhone's IMU and a Mac computer for sound synthesis. You can see a video of the whole system <a href ="">here.</a>
+                My work involved using Matlab and Python/Pandas to write data analysis and apply transforms on sampled data. Later on, I worked on integrating the system to the Apple ecosystem, converting the algorithms into real-time using <a href="https://developer.apple.com/swift/" target="_blank">swift </a>to be processed using an Apple iPhone's IMU and a Mac computer for sound synthesis.
             </p>
             <p>
                 The project was conducted through the univeristy's <a href ="http://mdp.engin.umich.edu" target="_blank">Multidisciplinary Design Program</a>, a program designed to give students a chance to work on teams of people from various backgrounds, give technical presentations, papers, and work with a sponsor(in our case <a href="http://www.music.umd.edu/faculty/music_directory/wind_and_percussion/andrea_brown" target="_blank">Dr. Andrea Brown</a>) and their varying needs.
@@ -172,7 +187,8 @@
                 <img src="img/projects/space_knobs.JPG" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
             </div>
             <div class="col-9">
-            <b id="space_knobs">Michigan Project Music Makeathon</b> <br />
+            <b id="space_knobs">Michigan Project Music Makeathon</b>
+<br />
             <em>Space Knobs Vocal Harmonizer</em>
             <p>
                 I got a chance to participate in <a href="https://www.facebook.com/michiganprojectmusic/" target="_blank">Michigan Project Music's</a> inaugural music makeathon, where groups got a chance to build an exprimental "instrument" in 18 hours. It was a really cool experience where I learned a lot about Max/MSP and some cool signal processing concepts and apply them to music.
@@ -217,7 +233,7 @@
                 <img src="img/projects/garagedoor.jpg" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
             </div>
             <div class="col-9">
-            <b>Garage Door Opener</b> <br />
+            <a href ="files/garagedoor_report.pdf"> <b>Garage Door Opener</b> </a> <br />
             <em>Electronics Side Project</em>
             <p>
                 I developed a RESTful API for my personal garage using Twilio, Node.js and a Raspberry Pi that controlled the garage via web application, text message or android application for easy access to the house. Read the full documentation <a href ="files/garagedoor_report.pdf">here.</a>
@@ -245,7 +261,7 @@
             <img src="img/projects/rov.jpg" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
         </div>
         <div class="col-9">
-            <b id = "rovd">Underwater ROV ENGR 100 Course Project</b> <br />
+            <a href="files/rov_report.pdf" target="_blank"> <b id = "rovd">Underwater ROV ENGR 100 Course Project</b> </a><br />
             <em>Electronics Engineer</em>
             <p>
                 As a part of the Engineering 100 class at the University, me and a a group of fellow engineers were tasked with the creation of an underwater ROV that had a remote control system, a bluetooth camera module, and a hook to allow for interaction with its surroundings. After one semester of work we designed, built and tested the ROV in preparation for a competition at the end of the semester, where we pitted our ROV against other groups in a design challenge.
@@ -313,7 +329,7 @@
             <ul>
                 <li>EECS 551: Matrix Methods for Signal Processing and Machine Learning</li>
                 <li>EECS 452: Digital Signal Processing Design Lab</li>
-                <li>EECS 498: Accelerated Systems for AI and health
+                <li>EECS 598/498: Accelerated Systems for AI and health
                 <li>TC/ENGR 456: Upper level Technical Communications</li>
             </ul>
         </div>
