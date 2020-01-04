@@ -123,7 +123,7 @@
 		    <p>
 			Through EECS 452 (Digital Signal Processing), I worked on a project that processes drum kit audio inputs and classifies them in real time, creating sheet music as it processes inputs. This sheet music includes properly quantized inputs based off of probabalistic priors for common beats (putting an empahsis on eigth and quarter notes over 16th notes, etc).		    </p>
 		    <p>
-		    The project uses an STM Nucleo DSP chip to process and classify the input drum hits using Non-Negative Matrix Factorization (NNMF). Once the Nucleo correctly classifies drum hits by their title (snare, hi-hat closed, tom, crash, etc), the system then sends the onsets via UART to a raspberry pi. The Raspberry Pi then "transcribes" the input using known beat priors based off this <a href="">paper.</a> After determining the correct output, the system generates sheet music using the <a href="">Guido Music Notation Framework.</a> The project is currently ongoing, and will demo at the <a href="">Design Expo</a> on December 5th. You can see a draft of our poster <a href ="">here.</a>
+		    The project uses an STM Nucleo DSP chip to process and classify the input drum hits using Non-Negative Matrix Factorization (NNMF). Once the Nucleo correctly classifies drum hits by their title (snare, hi-hat closed, tom, crash, etc), the system then sends the onsets via UART to a raspberry pi. The Raspberry Pi then "transcribes" the input using known beat priors based off this <a href="">paper.</a> After determining the correct output, the system generates sheet music using the <a href="">Guido Music Notation Framework.</a> The project was demoed at the <a href="https://mdp.engin.umich.edu/design-expo/">Design Expo</a> on December 5th. You can see our <a href="files/downbeat_poster.pdf">poster</a> and <a href ="files/downbeat_final_report.pdf">report.</a>
 		    </p>
 		    </div>
 	</div>
@@ -133,11 +133,16 @@
 			<img src="img/projects/xilinx_he.jpg" target="_blank" width="300" height="" class="img-fluid img-thumbnail img-responsive" />
 		    </div>
 		    <div class="col-9">
-		    <b id ="mdp">EECS 498: Hardware Acceleration for Health and AI: Homomorphic Encryption Acceleration</b> <br />
+		    <b id ="mdp">EECS 498: Hardware Acceleration for Health and AI: AES Encryption Acceleration</b> <br />
 		    <em> Student, Algorithms Engineer </em>
 		    <p>
-			Through EECS 498/598, I am working on a project involving Homomorphic Encryption, or encryption that allows you to do operations on encrypted data without knowledge of the data itself. This is useful in the healthcare environment, as personal healthcare data is sensitive and private information that cannot be shared freely. However, homomorphic encryption is expensive and takes a lot of time. For this project, I am working on an FPGA accelerator that accelerates homomorphic encryption and its' operations, to attempt to speed up homomorphic encryption pipeline, making it useful to use on private health data. This project is ongoing.	    </p>
+		    Through EECS 498/598, I worked on a project involving AES encryption acceleration, as well as attempted to acelerate Homomorphic Encryption, a type of encryption. The abstract of the report is below, and you can find the full report <a href ="files/aes_report.pdf"> here.</a>
+		    </p>
+		<p>
+In this paper we first discuss a failed attempt to  create  a  homomorphic  encryption  matrix-multiply  accelerator,  followed  by  a  successful  attempt  to  build  an AES  accelerator.  Homomorphic  encryption  is  a  type  of encryption scheme based on the rings with learnings error assumption (RWLE) that allows for bit-wise operations inthe encrypted domain. This opens interesting opportunities in   cloud   computing   on   sensitive   data,   such   as   AI   on health  data.  Due  to  a  lack  of  understanding  of  abstract algebra,  we  pivoted  away  from  homomorphic  encryption accelerator  for  the  aforementioned  AES  accelerator. The  Advanced  Encryption  Standard  (AES)  has  beenused  widely  throughout  industry,  research,  and  govern-ment [10]. Because of it’s wide use, there is always a need to  accelerate  it.  In  this  paper,  we  implement  and  test  an FPGA  accelerator  that  speeds  up  AES-128  Encryption. We  compare  our  results  with  a  software  implmentation of  the  AES  algorithm,  and  with  Intel’s  Intel®  Advanced Encryption  Standard  (AES)  New  Instructions  (AES-NI) as  well,  which  the  current  industry  standard  for  AES acceleration.
+		</p>
 		    </div>
+
 	</div>
 
 
@@ -365,7 +370,7 @@
         <div class="col-4">
             Winter 2020
             <ul>
-                <li>Unsure</li>
+                <li>EECS 598: Optimization Methods in Signal and Image Processing and Machine Learning</li>
             </ul>
         </div>
     </div>
